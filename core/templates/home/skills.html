@@ -1,0 +1,53 @@
+{% extends "base/base.html" %}
+
+
+
+{% block content %}
+
+{% comment %}  {% endcomment %}
+
+
+<section id="skills">
+    <div id="skillsHeader" class="sectionHeader">
+      <p>Explore My</p>
+      <h3>Skills</h3>
+    </div>
+    <div id="skillsContainer" class="sectionContainer">
+      <div class="skillBox">
+        <div class="skillBoxTitle" id="frontEndBoxTitle">
+          <h3>Front End Skills</h3>
+        </div>
+        <div class="skillsLists" id="frontEndSkillsLists">
+          {% for i in  frontEndSkills %}
+          <div class="skillsList">
+            <img src="{{i.icon}}" alt="HTML" />
+            <p>{{i.name}}</p>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+      <div class="skillBox">
+        <div class="skillBoxTitle" id="backEndBoxTitle">
+          <h3>Back End Skills</h3>
+        </div>
+        <div class="skillsLists" id="backEndSkillsLists">
+          {% for i  in backEndSkills %}
+          <div class="skillsList">
+            <img src="{{i.icon}}" alt="Python" />
+            <p>{{i.name}}</p>
+          </div>
+          {% endfor %}
+          
+        </div>
+      </div>
+    </div>
+  </section>
+{% comment %}  {% endcomment %}
+
+
+
+{% endblock content %}
+
+
+

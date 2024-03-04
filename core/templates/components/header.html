@@ -1,0 +1,26 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+
+{% load static %}
+{% comment %} nav bar {% endcomment %}
+<nav id="navigationBar">
+    <div id="NavLogo" class="logo">
+      <a href="#profile"><img src="{% static 'images/Officals/myProtfolioLogo.jpg' %}" alt="Balasubramani"/></a>
+    </div>
+    <div class="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Get in Touch</a>
+    </div>
+    <div id="navToggleBtn" class="hamburgerIcon">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+
+{% comment %} nav bar {% endcomment %}
+
+{% endblock content %}

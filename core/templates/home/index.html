@@ -1,0 +1,136 @@
+{% extends "base/base.html" %}
+
+{% block title %}Balasubramani{% endblock title %}
+{% block content %}
+{% load static %}
+
+
+{% comment %} NavBar  {% endcomment %}
+
+
+{% include "components/header.html" %}
+
+
+{% comment %} NavBar {% endcomment %}
+
+
+
+
+
+
+<div class = "container">
+{% comment %} profile {% endcomment %}
+  <section id="profile">
+    <div class="profilePic">
+      <img src="{% static 'images/Officals/profilePic.jpg' %}" alt="Profile Picture" />
+    </div>
+    <div id="rightProfileSection">
+      <div class="text">
+        <div class="greeting">
+          <p>Hello I'm</p>
+        </div>
+        <div class="profileName">
+          <h3>Balasubramani</h3>
+        </div>
+        <div class="profession">
+          <p>Full Stack Developer</p>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn" id="resume">
+          <img src="{% static 'images/icons/downloading.png' %}" alt="download Resume" />
+          <p>Resume</p>
+        </button>
+        <button class="btn" id="Contact"><p>Contact Info</p></button>
+      </div>
+      <div class="links">
+        <a href="https://github.com/balasubramani10"><img src="{% static 'images/icons/githubicon.png' %}" alt="Github"/></a>
+        <a href="https://www.linkedin.com/in/balasubramani10/"><img src="{% static 'images/icons/linkedin.png' %}" alt=""/></a>
+      </div>
+    </div>
+  </section>
+{% comment %} profile {% endcomment %}
+
+
+{% comment %} ABout ME {% endcomment %}
+<section id="about">
+  <div id="aboutHeader" class="sectionHeader">
+    <p>Get To Know More</p>
+    <h3>About Me</h3>
+  </div>
+  <div id="aboutContainer" class="sectionContainer">
+    
+    <div id="aboutContent">
+      <div id="aboutBanners">
+        <div class="aboutBanner" id="education">
+          <img src="{% static 'images/icons/education.png' %}" alt="" class="aboutBannerIcon"/>
+          <h5>Education</h5>
+          <p>Bachelor Of Science</p>
+          <p>Information Technology</p>
+        </div>
+        <div class="aboutBanner" id="certification">
+          <img src="{% static 'images/icons/certification.png' %}" alt="" class="aboutBannerIcon"/>
+          <h5>Certification</h5>
+          <p>Master In</p>
+          <p>Full Stack Development</p>
+        </div>
+      </div>
+      <div id="aboutDetails">
+        <p>
+          I specialize in crafting seamless web experiences, from
+          front-end finesse to back-end robustness.Explore my portfolio to
+          witness my passion for coding and problem-solving in action.
+          Each project reflects my dedication and expertise. Let's connect
+          and create something extraordinary together!
+        </p>
+      </div>
+    </div>
+    <!-- <div id="aboutPic">
+      <img src="/Media/Officals/aboutProficePic.jpg" alt="About Me" />
+    </div> -->
+  </div>
+</section>
+{% comment %} ABout ME {% endcomment %}
+
+
+
+{% comment %}  {% endcomment %}
+{% include "home/skills.html" %}
+
+{% comment %}  {% endcomment %}
+
+
+
+{% comment %}  {% endcomment %}
+{% include "home/projects.html" %}
+{% comment %}  {% endcomment %}
+
+
+{% comment %}  {% endcomment %}
+
+{% include "contact/contact.html" %}
+{% comment %}  {% endcomment %}
+
+
+{% comment %}  {% endcomment %}
+
+{% include "components/footer.html" %}
+{% comment %}  {% endcomment %}
+
+
+
+</div>
+
+
+
+
+
+
+{% endblock content %}
+
+
+
+
+
+
+

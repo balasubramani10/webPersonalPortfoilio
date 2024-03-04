@@ -1,0 +1,46 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+
+
+
+{% comment %} Projects {% endcomment %}
+
+
+
+
+    <section id="projects">
+        <div id="projectsHeader" class="sectionHeader">
+          <p>Browse My Recent</p>
+          <h3>Projects</h3>
+        </div>
+        <div id="projectsContainer" class="sectionContainer">
+          <div class="projectBoxs">
+            {% for i  in projects  %}
+            <div class="projectBox">
+              <div class="projectBanner">
+                <img src="{{i.image}}" alt="" />
+              </div>
+              <div class="projectTitle">
+                <h6>{{i.title}}</h6>
+              </div>
+              <div class="projectBtns">
+                <button class="projectGithub"><a href= "{{i.github_link}}">Git Hub</a></button>
+                <button class="projectLiveBtn">Live Demo</button>
+              </div>
+            </div>
+            {% endfor %}
+            
+            
+          </div>
+        </div>
+      </section>
+
+
+
+{% comment %}  Projects{% endcomment %}
+
+
+
+{% endblock content %}
+
